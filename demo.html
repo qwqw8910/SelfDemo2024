@@ -1,0 +1,118 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+  <title>今天想什麼?</title>
+
+    <link rel="canonical" href="https://codepen.io/Wendy-Ho/pen/ExaXWpQ">
+  
+  
+  
+  
+<style>
+body{
+  font-family: Arial,"微軟正黑體"!important;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  background: linear-gradient(45deg, rgb(19, 73, 95), rgb(118, 75, 226), rgb(131, 115, 198), rgb(119, 211, 185));
+  height:100vh;
+  color:#fff;
+}
+.circle{
+  width:300px;
+  min-height:300px;
+  border-radius:100%;
+  background:#f2f2f2;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:2em;
+  box-shadow: 0px 10px 30px -10px #000;
+  color:#000;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<h1>今天想什麼?</h1>
+<div class="circle">
+  抽
+</div>
+  
+      <script id="rendered-js">
+// var foodArr=['麗山水餃','北方水餃','北一排骨飯','八方雲集','溫州大餛飩','小學日','羹你見麵','福德旺','滷味','瑪莎義大利麵','三商巧福','吉野烤肉飯','台北牛津牛肉麵','歡樂購特大牛排','福岡屋拉麵','涼麵鋪子','泰回味','萬兩食堂','全美自助餐','好好食坊','兄弟麵館','基隆廟口咖哩麵','葉記燒臘','亞記牛肉河粉','周胖子餃子館','老秈味石磨腸粉','濟州豆腐鍋之家','山西刀切番茄牛肉麵','一前一町拉麵','巨馬臭臭鍋','苗栗江記扁食','65義大利麵','巷口'],
+var foodArr = ['滷味', '水餃', '牛肉麵', '7-11', '一午一拾', '涼麵', '粥', '牛肉飯', '義大利麵', 'YOLO', '大陸餅', '不吃', '去遠東吃', '柒-麻辣燙', '島嶼便當', 'WANT', "酸辣粉", "羹麵"],
+num = foodArr.length - 1,
+btn = $('.circle'),
+open = false;
+btn.click(function () {
+  if (!open) {
+    timer = setInterval(change, 50);
+    open = true;
+  } else
+  {
+    clearInterval(timer);
+    open = false;
+  }
+});
+function change() {
+  var random = Math.round(Math.random() * num),
+  eat = foodArr[random];
+  btn.text(eat);
+}
+//     num = foodArr.length-1,
+//     show = $('.circle'),
+//     btn = $('.btn'),
+//     open = false;
+// btn.click(function(){
+//   run();
+// })
+// function run(){
+//   if(!open){
+//     timer = setInterval(change,50);
+//     btn.removeClass('start').addClass('stop').text('停');
+//     open = true;
+//   }
+//   else{
+//     clearInterval(timer);
+//     btn.removeClass('stop').addClass('start').text('吃什麼?');
+//     open = false;
+//   }
+//  }
+// function change(){
+//   var random = Math.round(Math.random()*num),
+//       eat = foodArr[random];
+//   show.text(eat);
+// }
+//# sourceURL=pen.js
+    </script>
+
+  
+
+
+
+</body></html>
